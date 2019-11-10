@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			<select v-model="input">
+				<option value="0">�ʫ�</option>
+				<option value="1">���q</option>
+			</select> 
+			<div v-if="input == 0">
+				<input type="text" />
+				<button>�ʫפ@�U</button>
+			</div>
+			<div v-else-if="input == 1">
+				<input type="text" />
+				<button>���q�j��</button>
+			</div>
+		</div>
+	</body>
+	<script src="vue.js"></script>
+	<script>
+		 new Vue({
+		 	el:"#box",
+		 	data:{
+		 		input:0
+		 	}
+		 })
+	</script>
+</html>
