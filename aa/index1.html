@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			#box {
+				width: 1349px;
+				height: auto;
+				background:rgba(12,18,72,0.9);
+			}
+			
+			.con {
+				width: 1280px;
+				height: auto;
+				margin: auto;
+/*				background: red;
+*/			}
+			
+			.head {
+				width: 100%;
+				height: 78px;
+				margin-bottom: 20px;
+			}
+			
+			.heaf-left {
+				float: left;
+				width: 186px;
+				height: 50px;
+			}
+			
+			.heaf-left img {
+				width: 186px;
+				height: 50px;
+				margin-top: 19px;
+			}
+			
+			.head-right {
+				width: 880px;
+				height: 49px;
+				float: right;
+				margin-top: 19px;
+			}
+			
+			.head-right ul {
+				width: 604px;
+				height: 49px;
+				flex: inherit;
+			}
+			
+			.head-right ul li {
+				width: 86px;
+				height: 49px;
+				text-align: center;
+				line-height: 49px;
+				color: #FFFFFF;
+				float: left;
+				font-size: 16px;
+			}
+			
+			.head-right ul li a {
+				width: 86px;
+				height: 49px;
+				text-decoration: none;
+				color: #FFFFFF;
+				display: block;
+			}
+			
+			.head-right ul li a:hover {
+				color: #00008B;
+				border-bottom: 1px solid #00008B;
+			}
+			
+			.content {
+				width: 100%;
+				height: 440px;
+				margin-bottom: 80px;
+			}
+			
+			.content-left {
+				width: 426px;
+				height: 440px;
+				float: left;
+			}
+			
+			.content-left h3 {
+				font-size: 50px;
+				color: #FFFFFF;
+				font-weight: bold;
+				margin-bottom: 30px;
+			}
+			
+			.mei {
+				color: #0074A2;
+			}
+			
+			.content-left p {
+				font-size: 15px;
+				color: #FFFFFF;
+				line-height: 36px;
+				margin-bottom: 30px;
+			}
+			
+			.button {
+				width: 342px;
+				height: 44px;
+			}
+			
+			.button button {
+				width: 152px;
+				height: 44px;
+				border: 1px solid #0000FF;
+				line-height: 44px;
+				text-align: center;
+				border-radius: 20px;
+				outline: none;
+				background: #FFFFFF;
+			}
+			
+			.btn1 {
+				float: left;
+			}
+			
+			.btn2 {
+				float: right;
+			}
+			
+			.content-right {
+				width: 614px;
+				height: 440px;
+				float: right;
+				background-image: url('https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zZDUyMmVkNmVhNmIzYjZhYTBiZWM0YzdhMGQyNzE3Mi5wbmc_p_p100_p_3D.png');
+			}
+			.women{
+				width:800px;
+				height: 20px;
+				margin: auto;
+			}
+			.content2{
+				width: 100%;
+				height: 458px;
+				margin-bottom: 50px;
+			}
+			.content2-left{
+				float: left;
+				width: 590px;
+				height: 458px;
+				background: violet;
+			}
+			
+			.tiao{
+				width: 100px;
+				height: 2px;
+				background: #FFFFFF;
+				margin: auto;
+				margin-top: 20px;
+			}
+			.time{
+				width: 590px;
+				height: 76px;
+				margin-bottom: 40px;
+			}
+			.jindu{
+				width: 460px;
+				height: 30px;
+				margin: auto;
+				border-radius: 10px;
+				background: #FFFFFF;
+				padding: 5px;
+				margin-bottom: 70px;
+			}
+			.jindu-con{
+				width: 371px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				border-radius: 10px;
+				background: #0768ee;
+				color: #FFFFFF;
+			}
+			.button2 button{
+				background: #0a6ef2;
+				float: right;
+				color: #FFFFFF;
+			}
+			.content2-right{
+				float: right;
+				width: 590px;
+				height: 458px;
+				background: darkblue;
+			}
+			.span{
+				width: 450px;
+				height: 90px;
+				padding-left: 27px;
+				margin-bottom: 50px;
+			}
+			.span div{
+				font-size: 16px;
+				color: #FFFFFF;
+				margin-bottom: 13px;
+			}
+			.puase{
+				width: 68px;
+				height: 68px;
+				border-radius: 50%;
+				border: 1px solid #005CBF;
+			}
+			.puase img{
+				width: 100%;
+				height: 100%;
+			}
+			.content3{
+				width: 100%;
+				height: 421px;
+				margin: auto;
+				margin-bottom: 110px;
+			}
+			.content3 img{
+				width: 100%;
+				height: 100%;
+			}
+			.content4{
+				width: 100%;
+				height: 450px;
+			}
+			.content4-left{
+				float: left;
+				width: 470px;
+				height: 350px;
+				background: #005CBF;
+				padding: 50px;
+			}
+			.content4-left img{
+				width: 64px;
+				height: 90px;
+				margin-bottom: 30px;
+			}
+			.content4-right img{
+				width: 64px;
+				height: 90px;
+				margin-bottom: 30px;
+			}
+			.content4-right{
+				float: right;
+				width: 470px;
+				height: 350px;
+				padding: 50px;
+				background: #005CBF;
+			}
+			.titlele{
+				width: 490px;
+				height: 200px;
+			}
+			.titlele-con{
+				width: 490px;
+				color: rgb(188, 216, 253);
+				margin-bottom: 20px;
+			}
+			.titlele-con img{
+				width: 12px;
+				height: 12px;
+				float: left;
+				margin-right: 12px;
+				margin-top: 6px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<div class="con">
+				<div class="head">
+					<div class="heaf-left">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy82YzAxZmI3NWMyY2UyNmVkZThiYTA1Y2U3MGEzMDU3Zi5wbmc_p_p100_p_3D.png" />
+					</div>
+
+					<div class="head-right">
+						<ul>
+							<li v-for="i in arr">
+								<a href="#one">{{i}}</a>
+								<!--<a href="#one">第一章</a>-->
+							</li>
+							<!--{{i}}-->
+						</ul>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content-left">
+						<h3>践行惠普金融<br>助力<span class="mei">美好生活</span></h3>
+						<p>我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，这就是起飞页自助建站的神奇之处。</p>
+						<div class="button">
+							<button class="btn1">联系我们——></button>
+							<button class="btn2">点我咨询——></button>
+						</div>
+					</div>
+					<div class="content-right">
+					</div>
+				</div>	
+				<div id="one">
+					<no1 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站." x_title="使用流程">
+						<div style="overflow: hidden;">
+							<div v-for="i in 3" style="margin:35px;width: 350px;height: 248px;background:green;float: left;">
+								<!--{{i}}-->
+							</div>
+						</div>
+					</no1>
+				</div>
+				<!--<no1 :data='arr'></no1>-->
+				<div class="content2">
+					<div class="content2-left">
+						<h3 style="text-align: center;font-size: 34px;color: #FFFFFF;margin-top: 40px;margin-bottom: 6px;">
+							近期卖货
+						</h3>
+						<span style="width:136px;height:25px;margin-left:260px;text-align: center;font-size: 16px; color: #bcd8fd;">
+							购买进度
+						</span>
+						<div class="tiao">
+							
+						</div>
+						<div class="time">
+							
+						</div>
+						<div class="jindu">
+							<div class="jindu-con">购买进度 80%</div>
+						</div>
+						<div class="button button2">
+							<button>联系我们 —></button>
+						</div>
+					</div>
+					<div class="content2-right">
+						<p style="font-size: 32px; color: #FFFFFF;margin-top: 50px;margin-bottom: 40px;">
+							最值得信赖的平台
+						</p>
+						<h6 style="font-size: 14px; color: #FFFFFF;line-height: 40px; margin-bottom: 40px;">移动互联网的稳定快速发展带动了货币行业的迅速崛起，在如此庞大的货币海洋中，哪些是您所需要的货币呢？</h6>
+						<div class="span">
+							<div>享受专属优惠券</div>
+							<div>用于商城消费 先用后付</div>
+							<div>随心付，3/6/9/12期随心付</div>
+						</div>
+						<div class="puase">
+							<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zZTA2NTU1NDVjZDY4YmIyNGZlOWVjM2E2YjMzNzhlMS5wbmc_p_p100_p_3D.png"/>
+						</div>
+					</div>
+				</div>
+				<div id="one">
+					<no1 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站." x_title="全球服务">
+					</no1>
+				</div>
+				<div class="content3">
+					<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8yMTg3ZWYyNmI2MDdiZmZlMDQ1MzgyMTNiNDYxMmRiYy5qcGc_p_p100_p_3D.jpg"/>
+				</div>
+				<div id="one" id="bbox">
+					<no1 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站." x_title="关于我们">
+					</no1>
+				</div>
+				<div id="one" id="bbox">
+					<no1 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站." x_title="专家团队">
+					</no1>
+				</div>
+				<div class="content4">
+					<div class="content4-left">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy82MmMzM2FhNTI3Y2MxMjIxMWQ2YzRmMjdlYThhOTJkNC1lMTU2Mzk1MDAxNzQzOC5wbmc_p_p100_p_3D.png"/>
+						<h3 style="font-size: 18px; color: #FFFFFF;margin-bottom: 40px;">税收居民身份须知！</h3>
+						<div class="titlele">
+							<div class="titlele-con">
+								<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+							我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事
+							</div>
+							<div class="titlele-con">
+								<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+							我们的流 作和维护成为一件轻松惬意的事化图文内容编辑模式让网站制 作和维护成为一件轻松惬意
+							</div>
+							<div class="titlele-con">
+								<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+							我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事
+							</div>
+						</div>
+					</div>
+					<div class="content4-right">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy82MmMzM2FhNTI3Y2MxMjIxMWQ2YzRmMjdlYThhOTJkNC1lMTU2Mzk1MDAxNzQzOC5wbmc_p_p100_p_3D.png"/>
+						<h3 style="font-size: 18px; color: #FFFFFF;margin-bottom: 40px;">税收居民身份须知！</h3>
+						<div class="titlele">
+							<div class="titlele-con">
+								<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+							我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事
+							</div>
+							<div class="titlele-con">
+								<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+							我们的流 作和维护成为一件轻松惬意的事化图文内容编辑模式让网站制 作和维护成为一件轻松惬意
+							</div>
+							<div class="titlele-con">
+								<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png" alt="" />
+							我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<template id="no1">
+			<div>
+				<div style="text-align: center;">
+					<h3 style="font-size: 40px; color: #FFFFFF; margin-bottom: 20px;">{{title}}</h3>
+					<div class="women" style="height:110px;font-size: 20px; color: #FFFFFF;">
+							{{content}}
+					</div>
+					<div>
+						<slot></slot>
+					</div>
+				</div>
+			</div>
+		</template>
+		<script src="vue.js"></script>
+		<script>
+			//			var bus = new Vue()
+
+			Vue.component('no1', {
+				template: "#no1",
+				props: ['x_title', 'x_content'],
+				data() {
+					return {
+						title: this.x_title,
+						content: this.x_content
+					}
+				}
+			})
+			new Vue({
+				el: "#box",
+				data: {
+					arr: ['首页', '使用流程', '全球服务', '关于我们', '专家团队', '联系我们', '合作伙伴']
+				}
+			})
+		</script>
+	</body>
+
+</html>
